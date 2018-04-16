@@ -1,6 +1,17 @@
 body {
     background-color: #e4e4e4;
 }
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #0f7bb1; 
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ededed;
+}
 .wrapper {
     width: 492px;
     height: 280px;  
@@ -81,15 +92,17 @@ body {
     color: #000000;
 }
 .friends {
+    height: 250px;
     display: flex;
     padding: 15px;
+    overflow-y: scroll;
 }
-.friends__first-column, .friends__second-column {
-    height: 250px;
+.friends__first-column, .friends__second-column {    
     width: 220px;
+    height: 440px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;    
 }
 .friends__item {
     position: relative;
@@ -97,6 +110,7 @@ body {
 }
 .friends__image {
     margin-right: 15px;
+    border-radius: 2px;
 }
 .friends__name_link {
     font-size: 13px;
