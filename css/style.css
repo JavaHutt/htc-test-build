@@ -1,7 +1,7 @@
 body {
     background-color: #e4e4e4;
 }
-::-webkit-scrollbar {
+::-webkit-scrollbar {    /**Custom scrollbar, doesn't work in Firefox**/
     width: 5px;
 }
 ::-webkit-scrollbar-thumb {
@@ -16,11 +16,19 @@ body {
     width: 492px;
     height: 280px;  
     background-color: #ffffff;    
-    border-radius: 4px;
+    border-radius: 5px;
+    border-top-left-radius: 0;
     box-shadow: -1px 1px 5px #a1a1a1;
 }
 .tab__profile, .tab__friends {
-    display: inline-block;    
+    display: inline-block; 
+    padding: 8px;
+    margin-right: 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 2px -2px 2px #a1a1a1;
+    background-color: #ffffff;   
 }
 .profile {    
     height: 280px;
@@ -78,7 +86,7 @@ body {
     font-weight: bold;
     color: #000000;
 }
-.user__email {
+.user-email {
     text-decoration: underline;
     color: #408cf5;    
 }
