@@ -1,4 +1,3 @@
-console.log(100);
 window.onload = function() {
     document.querySelector('.tab').addEventListener('click', fTabs);
 
