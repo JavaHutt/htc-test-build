@@ -20,15 +20,18 @@ body {
     border-top-left-radius: 0;
     box-shadow: -1px 1px 5px #a1a1a1;
 }
-.tab__profile, .tab__friends {
+.tab__header {
     display: inline-block; 
     padding: 8px;
     margin-right: 5px;
+    text-align: center;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px 5px 0 0;
     box-shadow: 2px -2px 2px #a1a1a1;
-    background-color: #ffffff;   
+    cursor: pointer;
+    background-image: linear-gradient(to right bottom, #0784b4, #1e69ac);
+    color: #ffffff;
 }
 .profile {    
     height: 280px;
@@ -101,7 +104,7 @@ body {
 }
 .friends {
     height: 250px;
-    display: flex;
+    display: none;
     padding: 15px;
     overflow-y: scroll;
 }
@@ -138,4 +141,9 @@ body {
     font-style: italic;
     font-family: Arial, Helvetica, sans-serif;
     color: #2f8a26;
+}
+.active {
+    color: #000000;
+    background-image: none;
+    background-color: #ffffff;
 }

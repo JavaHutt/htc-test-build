@@ -10,11 +10,11 @@
 </head>
 <body>
     <ul class="tab">
-        <li class="tab__profile">Профиль</li>
-        <li class="tab__friends">Друзья пользователя</li>
+        <li class="tab__header active" data-tab="0">Профиль</li>
+        <li class="tab__header" data-tab="1">Друзья пользователя</li>
     </ul>
     <div class="wrapper">
-        <div class="profile">
+        <div class="profile tab__body">
             <div class="profile__left">
                 <img class="profile__image" src="image/userpic.png" alt="UserPic">
                 <a class="profile__addfriend" href="#">Добавить в друзья</a>
@@ -44,7 +44,7 @@
                 </div>
             </div>
         </div>
-        <!--<div class="friends">
+        <div class="friends tab__body">
             <div class="friends__first-column">
                 <div class="friends__item">
                     <img class="friends__image" src="image/lion.png" alt="Lev">
@@ -129,7 +129,8 @@
                     </ul>                    
                 </div>           
             </div>
-        </div>-->
+        </div>
     </div>
+<script src="script/tabchanger.js"></script>
 </body>
 </html>
