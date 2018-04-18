@@ -42,6 +42,8 @@ body {
 .profile__left {
     width: 150px;
 }
+.profile__right {
+}
 .profile__addfriend {
     display: block;
     width: 132px;

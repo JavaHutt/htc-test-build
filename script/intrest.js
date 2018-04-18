@@ -1,8 +1,10 @@
-// returns array-like collection of DOM nodes
-const removableButtons = document.querySelectorAll('.removable');
-
-// transform to array to have a handy forEach method and
-// add listeners to each el to remove itself
-Array.from(removableButtons).forEach(function(el) {
-  el.addEventListener('click', el.remove)
-});
+addInterestButton.addEventListener(
+  'click',
+  function(event) {
+    var extractedInterest = prompt('Добавить интерес','');
+    if (extractedInterest) {
+      var html = "<button class='removable' onclick='this.remove()'>"+ extractedInterest +"</button>";
+      target.innerHTML += html;
+      target.addEventListener('click', target.remove);
+    } else { console.warn('input is empty') }    
+  });

@@ -36,12 +36,13 @@
                         <td class="user-email">vitalya@gora.ru</td>
                     </tr>
                 </table>
-                <div class="intrests">
+                <div class="intrests" id="target">
                     <h3 class="intrests__header">Интересы</h3>
-                    <button class="removable">Музыка</button>
-                    <button class="removable">Компьютеры</button>
-                    <button class="removable">Радио</button>
-                </div>
+                    <button class="removable" onclick='this.remove()' id="first">Музыка</button>
+                    <button class="removable" onclick='this.remove()'>Компьютеры</button>
+                    <button class="removable" onclick='this.remove()'>Радио</button>
+                  </div>
+                  <button id="addInterestButton">...</button>
             </div>
         </div>
         <div class="friends tab__body">
@@ -93,7 +94,7 @@
                     <ul>
                         <li class="friends__name"><a href="#" class="friends__name_link">Находка Капитал</a></li>
                         <li class="friends__city">г. Усть-Бельск</li>
-                        <li class="friends__status" id="target">Offline</li>
+                        <li class="friends__status">Offline</li>
                     </ul>
                 </div>
                 <div class="friends__item">

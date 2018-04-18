@@ -4,7 +4,7 @@ window.onload = function() {
     function fTabs(event) {
         console.log(event);
         if (event.target.className == 'tab__header') {
-            //dataTab - number of tab to show
+            // dataTab - number of tab to show
             var dataTab = event.target.getAttribute('data-tab');
             var tabH = document.getElementsByClassName('tab__header');
             for (var i = 0; i < tabH.length; i++) {
