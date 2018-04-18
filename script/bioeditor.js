@@ -7,7 +7,7 @@ document.getElementById('name').addEventListener(
       document.getElementById("name").textContent = newText;
       }
       else {
-        alert('Имя должно быть у всех!');
+        console.log('input is empty');
       }
     }
   );

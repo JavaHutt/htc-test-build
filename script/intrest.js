@@ -1,16 +1,20 @@
-addInterestButton.addEventListener(
+document.getElementById('addInterestButton').addEventListener(
   'click',
   function(event) {
-    var newDiv = document.createElement("button"); 
-  // and give it some content 
-    var newContent = document.createTextNode(prompt('Новый интерес','')); 
-    var newAtt = document.createAttribute('onclick');
-    newAtt.value = 'this.remove()';
-  // add the text node to the newly created div
-    newDiv.appendChild(newContent);  
-    newDiv.setAttributeNode(newAtt);
-
-  // add the newly created element and its content into the DOM 
-    var currentDiv = document.getElementById("target"); 
-    currentDiv.insertBefore(newDiv, currentDiv.firstChild); 
+    var newString = document.createTextNode(prompt('Новый интерес',''));    
+    if (newString.length) {
+      var newButton = document.createElement("button");       
+      newButton.appendChild(newString);        
+      var currentDiv = document.getElementById("target"); 
+      currentDiv.insertBefore(newButton, currentDiv.firstChild);
+      newButton.addEventListener('click',newButton.remove);      
+    }   
+    else {
+      console.log("input is empty");
+    }
   });
+const removableButtons = document.querySelectorAll('.removable');
+
+Array.from(removableButtons).forEach(function(el) {
+  el.addEventListener('click', el.remove)
+});
