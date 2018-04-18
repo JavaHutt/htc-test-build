@@ -1,10 +1,11 @@
 document.getElementById('addInterestButton').addEventListener(
   'click',
   function(event) {
-    var newString = document.createTextNode(prompt('Новый интерес',''));    
-    if (newString.length) {
+    var newString = prompt('Новый интерес','');    
+    if (newString) {
+      var newTextNode = document.createTextNode(newString);
       var newButton = document.createElement("button");       
-      newButton.appendChild(newString);        
+      newButton.appendChild(newTextNode);        
       var currentDiv = document.getElementById("target"); 
       currentDiv.insertBefore(newButton, currentDiv.firstChild);
       newButton.addEventListener('click',newButton.remove);      
