@@ -42,8 +42,6 @@ body {
 .profile__left {
     width: 150px;
 }
-.profile__right {
-}
 .profile__addfriend {
     display: block;
     width: 132px;
@@ -95,8 +93,12 @@ body {
     text-decoration: underline;
     color: #408cf5;    
 }
-.intrests {
+.intrests__header {
     margin-top: 25px;
+}
+.intrests {
+    width: 300px;
+    display: block;
 }
 .intrests__header {
     font-size: 12px;
