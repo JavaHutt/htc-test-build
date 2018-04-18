@@ -1,7 +1,13 @@
-target.addEventListener(
+var text = document.getElementById('name').textContent;
+document.getElementById('name').addEventListener(
     'click',
     function(event) {
-      var newText = prompt('Новое имя', '');
-      document.getElementById("target").textContent = newText;
+      var newText = prompt('Новое имя', text);
+      if (newText) {
+      document.getElementById("name").textContent = newText;
+      }
+      else {
+        alert('Имя должно быть у всех!');
+      }
     }
   );
