@@ -1,8 +1,11 @@
 document.getElementById('addInterestButton').addEventListener(
   'click',
   function(event) {
-    var newString = prompt('Новый интерес','');    
-    if (newString) {
+    var newString = prompt('Новый интерес','');  
+    if (newString.length >= 16) {
+      alert('Не более 16 символов!');
+    }  
+    else if (newString) {
       var newTextNode = document.createTextNode(newString);
       var newButton = document.createElement("button");       
       newButton.appendChild(newTextNode);        
