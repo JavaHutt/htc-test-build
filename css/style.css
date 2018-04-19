@@ -13,11 +13,17 @@ body {
     background-color: #ededed;
 }
 .wrapper {
+    margin: auto auto;
     width: 492px;
     height: 280px;  
     background-color: #ffffff;    
     border-radius: 5px;
     border-top-left-radius: 0;
+    box-shadow: -1px 1px 5px #a1a1a1;
+}
+.tab {
+    width: 492px;
+    margin: auto;
     box-shadow: -1px 1px 5px #a1a1a1;
 }
 .tab__header {
@@ -28,7 +34,6 @@ body {
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px 5px 0 0;
-    box-shadow: 2px -2px 2px #a1a1a1;
     cursor: pointer;
     background-image: linear-gradient(to right bottom, #0784b4, #1e69ac);
     color: #ffffff;
@@ -65,8 +70,11 @@ body {
     margin-top: 5px;
 }
 .profile__name {
+    margin: -2px;
     font-size: 23px;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: text, auto;
+    border:none; 
 }
 .profile__city {
     margin-top: 5px;
@@ -89,8 +97,18 @@ body {
     font-weight: bold;
     color: #000000;
 }
+.user-relationship-status {    
+    -webkit-appearance: none;
+    -moz-appearance: none;   
+    text-overflow: '';   
+    border: none;
+}
+.user-phone {
+    border: none;
+}
 .user-email {
     text-decoration: underline;
+    border: none;
     color: #408cf5;    
 }
 .intrests__header {

@@ -19,21 +19,39 @@
                 <img class="profile__image" src="image/userpic.png" alt="UserPic">
                 <a class="profile__addfriend" href="#">Добавить в друзья</a>
             </div>     
-            <div class="profile__right">
-                <h2 class="profile__name" id="name">Виталя Гора</h2>
+            <div class="profile__right">                
+                <form id="nameChangerForm" method="post">
+                    <input class="profile__name" id="nameChanger" title="edit" type="text" value="Виталя Гора">
+                </form>
                 <address class="profile__city">г. Нижние Шахты</address>
                 <table class="profile__bio">
                     <tr>
-                        <th class="relationship-status">Семейное положение</th>
-                        <td>холост</td>
+                        <th class="relationship-status">Семейное положение</th>                        
+                        <td>
+                            <select class="user-relationship-status" id="count">
+                                <option value="single">Холост</option>
+                                <option value="married">Женат</option>
+                                <option value="inlove">Влюблён</option>
+                                <option value="itscomplicated">Всё сложно</option>
+                                <option value="searchingforlove">В активном поиске</option>                                
+                            </select>
+                        </td>
                     </tr>
                     <tr>
                         <th class="phone">Телефон</th>
-                        <td>+7 (440) 554-32-12</td>
+                        <td>                            
+                            <form id="phoneChangerForm" method="post">
+                                <input class="user-phone" id="phoneChanger" title="edit" type="tel" value="+7 (440) 554-32-12">
+                            </form>
+                        </td>
                     </tr>
                     <tr>
-                        <th class="email">E-mail</th>
-                        <td class="user-email">vitalya@gora.ru</td>
+                        <th class="email">E-mail</th>                        
+                        <td>
+                            <form id="emailChangerForm" method="post">
+                                <input class="user-email" id="emailChanger" title="edit" type="email" value="vitalya@gora.ru">
+                            </form>
+                        </td>
                     </tr>
                 </table>
                 <h3 class="intrests__header">Интересы</h3>
