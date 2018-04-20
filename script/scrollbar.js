@@ -1,0 +1,1 @@
+var ps = new PerfectScrollbar('.friends');

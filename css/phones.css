@@ -1,29 +1,29 @@
 body {
     background-color: #e4e4e4;
 }
-/**::-webkit-scrollbar {    /**Custom scrollbar, doesn't work in Firefox**/
-/**    width: 5px;
-}**/
-/**::-webkit-scrollbar-thumb {
+::-webkit-scrollbar {    /**Custom scrollbar, doesn't work in Firefox**/
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #0f7bb1; 
 }
 ::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #ededed;
-} **/
+}
 .wrapper {
     margin: auto auto;
-    width: 492px;
-    height: 280px;  
+    width: 320px;
+    height: 530px;  
     cursor: default;
     background-color: #ffffff;    
     border-radius: 5px;
     border-top-left-radius: 0;
-    box-shadow: 1px 1px 5px #a1a1a1;
+    box-shadow: 2px 1px 5px #a1a1a1;
 }
 .tab {
-    width: 492px;
+    width: 320px;
     margin: auto;    
 }
 .tab__header {
@@ -39,10 +39,11 @@ body {
     color: #ffffff;
 }
 .profile {    
-    height: 280px;
+    width: 320px;
+    height: 530px;
     display: flex;    
-    align-items: flex-start;
-    padding: 15px;
+    flex-direction: column;    
+    align-items: center;
 }
 .profile__left {
     width: 150px;
@@ -69,16 +70,22 @@ body {
 .profile__right {
     margin-top: 5px;
 }
-.profile__name {
-    margin: -2px;
+.profile__name {      
+    text-align: center;  
     font-size: 23px;
     font-family: Arial, Helvetica, sans-serif;
     cursor: text, auto;
     border:none; 
 }
+.profile__name-form {
+    width: 268px;
+    margin: auto;
+}
 .profile__city {
+    width: 268px;
     margin-top: 5px;
-    font-size: 11px;
+    text-align: center;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     color: #757575;
 }
@@ -127,11 +134,12 @@ body {
     cursor: pointer;
 }
 .friends {
-    position: relative;
-    height: 250px;
+    width: 320px;
+    height: 500px;    
     display: none;
+    flex-direction: column;    
     padding: 15px;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 .friends__first-column, .friends__second-column {    
     width: 220px;
@@ -143,6 +151,7 @@ body {
 .friends__item {
     position: relative;
     display: flex;
+    margin-bottom: 20px;
 }
 .friends__image {
     margin-right: 15px;
